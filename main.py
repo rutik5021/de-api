@@ -13,7 +13,7 @@ app = FastAPI()
 with open("generated_records.json", "r") as f:
     original_data = json.load(f)
 
-@app.get("/data")
+@app.get("/")
 def get_data(
     start_time: Optional[datetime] = Query(None, description="Records with timestamp > this"),
     end_time: Optional[datetime] = Query(None, description="Records with timestamp <= this"),
