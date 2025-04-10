@@ -7,7 +7,6 @@ import copy
 import json
 import uvicorn
 
-
 app = FastAPI()
 
 # Sample data
